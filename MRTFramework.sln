@@ -69,6 +69,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.CrossCuttingCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.CrossCuttingConcern.Utils", "source\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Utils\MRTFramework.CrossCuttingConcern.Utils.csproj", "{22FC018B-6DAD-4076-A770-BE8FB2781A8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.CrossCuttingConcern.Validation", "source\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Validation\MRTFramework.CrossCuttingConcern.Validation.csproj", "{BB13B7BB-F359-473B-9B3A-96909392015F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,10 @@ Global
 		{22FC018B-6DAD-4076-A770-BE8FB2781A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22FC018B-6DAD-4076-A770-BE8FB2781A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22FC018B-6DAD-4076-A770-BE8FB2781A8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB13B7BB-F359-473B-9B3A-96909392015F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB13B7BB-F359-473B-9B3A-96909392015F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB13B7BB-F359-473B-9B3A-96909392015F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB13B7BB-F359-473B-9B3A-96909392015F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -182,6 +188,7 @@ Global
 		{F85ED254-5692-45B2-A6EB-4D9F2770C563} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
 		{57B06D99-0D25-407F-BE56-AA1A0DA1EE3C} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
 		{22FC018B-6DAD-4076-A770-BE8FB2781A8B} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
+		{BB13B7BB-F359-473B-9B3A-96909392015F} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E266973C-F163-45C1-A4F8-162771E80C13}
