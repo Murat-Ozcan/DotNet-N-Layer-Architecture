@@ -4,4 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="UnitOfWork\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\4-Model\MRTFramework.Model.Requests\MRTFramework.Model.Requests.csproj" />
+    <ProjectReference Include="..\..\..\4-Model\MRTFramework.Model.Responses\MRTFramework.Model.Responses.csproj" />
+    <ProjectReference Include="..\..\..\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Utils\MRTFramework.CrossCuttingConcern.Utils.csproj" />
+  </ItemGroup>
+
 </Project>
