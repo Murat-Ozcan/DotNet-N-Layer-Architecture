@@ -31,8 +31,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstract", "Abstract", "{2C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concrete", "Concrete", "{59586B2B-DA17-45E2-8A23-ADAAA38BB6D9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.Bases", "source\4-Model\MRTFramework.Model.Bases\MRTFramework.Model.Bases.csproj", "{B2CF80BD-C677-4154-AC44-91A91C288C74}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.Enums", "source\4-Model\MRTFramework.Model.Enums\MRTFramework.Model.Enums.csproj", "{0EF4855F-2E96-45B9-B427-2031330A10F7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.Requests", "source\4-Model\MRTFramework.Model.Requests\MRTFramework.Model.Requests.csproj", "{CC29C877-87FC-4314-9184-CBF434E71B3C}"
@@ -67,9 +65,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.CrossCuttingCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.CrossCuttingConcern.Security", "source\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Security\MRTFramework.CrossCuttingConcern.Security.csproj", "{57B06D99-0D25-407F-BE56-AA1A0DA1EE3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.CrossCuttingConcern.Utils", "source\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Utils\MRTFramework.CrossCuttingConcern.Utils.csproj", "{22FC018B-6DAD-4076-A770-BE8FB2781A8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.CrossCuttingConcern.Utils", "source\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Utils\MRTFramework.CrossCuttingConcern.Utils.csproj", "{22FC018B-6DAD-4076-A770-BE8FB2781A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.CrossCuttingConcern.Validation", "source\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Validation\MRTFramework.CrossCuttingConcern.Validation.csproj", "{BB13B7BB-F359-473B-9B3A-96909392015F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.CrossCuttingConcern.Validation", "source\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Validation\MRTFramework.CrossCuttingConcern.Validation.csproj", "{BB13B7BB-F359-473B-9B3A-96909392015F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.BaseModels", "source\4-Model\MRTFramework.Model.BaseModels\MRTFramework.Model.BaseModels.csproj", "{2E608669-821E-4CD5-8D1B-E70AD229AF61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,10 +77,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B2CF80BD-C677-4154-AC44-91A91C288C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2CF80BD-C677-4154-AC44-91A91C288C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2CF80BD-C677-4154-AC44-91A91C288C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2CF80BD-C677-4154-AC44-91A91C288C74}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0EF4855F-2E96-45B9-B427-2031330A10F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0EF4855F-2E96-45B9-B427-2031330A10F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EF4855F-2E96-45B9-B427-2031330A10F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -157,6 +153,10 @@ Global
 		{BB13B7BB-F359-473B-9B3A-96909392015F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB13B7BB-F359-473B-9B3A-96909392015F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB13B7BB-F359-473B-9B3A-96909392015F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E608669-821E-4CD5-8D1B-E70AD229AF61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E608669-821E-4CD5-8D1B-E70AD229AF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E608669-821E-4CD5-8D1B-E70AD229AF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E608669-821E-4CD5-8D1B-E70AD229AF61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -169,7 +169,6 @@ Global
 		{38AD3839-105D-4D58-94B9-8650D09CE0E3} = {5A257F7C-44F0-40F7-95BE-676F7AAF35D5}
 		{2C1A2607-EA51-4E5D-A8FC-37F05864E971} = {8169A026-A435-4091-BD7D-0E19A32733D3}
 		{59586B2B-DA17-45E2-8A23-ADAAA38BB6D9} = {8169A026-A435-4091-BD7D-0E19A32733D3}
-		{B2CF80BD-C677-4154-AC44-91A91C288C74} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
 		{0EF4855F-2E96-45B9-B427-2031330A10F7} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
 		{CC29C877-87FC-4314-9184-CBF434E71B3C} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
 		{D491F29C-A916-4E04-A407-A22C0F6B6674} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
@@ -189,6 +188,7 @@ Global
 		{57B06D99-0D25-407F-BE56-AA1A0DA1EE3C} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
 		{22FC018B-6DAD-4076-A770-BE8FB2781A8B} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
 		{BB13B7BB-F359-473B-9B3A-96909392015F} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
+		{2E608669-821E-4CD5-8D1B-E70AD229AF61} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E266973C-F163-45C1-A4F8-162771E80C13}
