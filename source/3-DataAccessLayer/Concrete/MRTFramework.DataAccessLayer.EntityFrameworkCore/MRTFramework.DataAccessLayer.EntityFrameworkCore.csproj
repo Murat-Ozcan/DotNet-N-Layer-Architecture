@@ -4,4 +4,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0-preview2-35157" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.2.0-preview2-35157" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\4-Model\MRTFramework.Model.BaseModels\MRTFramework.Model.BaseModels.csproj" />
+    <ProjectReference Include="..\..\..\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.EntityFrameworkCore\MRTFramework.CrossCuttingConcern.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\Abstract\MRTFramework.DataAccessLayer.DAOInterfaces\MRTFramework.DataAccessLayer.DAOInterfaces.csproj" />
+  </ItemGroup>
+
 </Project>
