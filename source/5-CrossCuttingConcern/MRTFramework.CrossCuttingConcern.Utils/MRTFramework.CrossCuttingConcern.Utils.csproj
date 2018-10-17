@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\4-Model\MRTFramework.Model.BaseModels\MRTFramework.Model.BaseModels.csproj" />
+  </ItemGroup>
+
 </Project>
