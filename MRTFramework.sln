@@ -33,19 +33,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concrete", "Concrete", "{59
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.Bases", "source\4-Model\MRTFramework.Model.Bases\MRTFramework.Model.Bases.csproj", "{B2CF80BD-C677-4154-AC44-91A91C288C74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.Enums", "source\4-Model\MRTFramework.Model.Enums\MRTFramework.Model.Enums.csproj", "{0EF4855F-2E96-45B9-B427-2031330A10F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.Enums", "source\4-Model\MRTFramework.Model.Enums\MRTFramework.Model.Enums.csproj", "{0EF4855F-2E96-45B9-B427-2031330A10F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.Requests", "source\4-Model\MRTFramework.Model.Requests\MRTFramework.Model.Requests.csproj", "{CC29C877-87FC-4314-9184-CBF434E71B3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.Requests", "source\4-Model\MRTFramework.Model.Requests\MRTFramework.Model.Requests.csproj", "{CC29C877-87FC-4314-9184-CBF434E71B3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.Responses", "source\4-Model\MRTFramework.Model.Responses\MRTFramework.Model.Responses.csproj", "{D491F29C-A916-4E04-A407-A22C0F6B6674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.Responses", "source\4-Model\MRTFramework.Model.Responses\MRTFramework.Model.Responses.csproj", "{D491F29C-A916-4E04-A407-A22C0F6B6674}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.ValidationRules", "source\4-Model\MRTFramework.Model.ValidationRules\MRTFramework.Model.ValidationRules.csproj", "{7EBCD4C1-0D52-4014-81C2-753B9F8CB6B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.ValidationRules", "source\4-Model\MRTFramework.Model.ValidationRules\MRTFramework.Model.ValidationRules.csproj", "{7EBCD4C1-0D52-4014-81C2-753B9F8CB6B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.InApps", "source\4-Model\MRTFramework.Model.InApps\MRTFramework.Model.InApps.csproj", "{496798BE-5B10-4F81-8524-EBB2EFD71E99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.InApps", "source\4-Model\MRTFramework.Model.InApps\MRTFramework.Model.InApps.csproj", "{496798BE-5B10-4F81-8524-EBB2EFD71E99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.BusinessLogicLayer.ServiceInterfaces", "source\2-BusinessLogicLayer\Abstract\MRTFramework.BusinessLogicLayer.ServiceInterfaces\MRTFramework.BusinessLogicLayer.ServiceInterfaces.csproj", "{703DC3A6-D253-48C4-B283-F16756228E7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.BusinessLogicLayer.ServiceInterfaces", "source\2-BusinessLogicLayer\Abstract\MRTFramework.BusinessLogicLayer.ServiceInterfaces\MRTFramework.BusinessLogicLayer.ServiceInterfaces.csproj", "{703DC3A6-D253-48C4-B283-F16756228E7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.BusinessLogicLayer.Domain", "source\2-BusinessLogicLayer\Concrete\MRTFramework.BusinessLogicLayer.Domain\MRTFramework.BusinessLogicLayer.Domain.csproj", "{67DCFAA1-D1E9-4813-A9C9-E275C95122AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.BusinessLogicLayer.Domain", "source\2-BusinessLogicLayer\Concrete\MRTFramework.BusinessLogicLayer.Domain\MRTFramework.BusinessLogicLayer.Domain.csproj", "{67DCFAA1-D1E9-4813-A9C9-E275C95122AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.DataAccessLayer.DAOInterfaces", "source\3-DataAccessLayer\Abstract\MRTFramework.DataAccessLayer.DAOInterfaces\MRTFramework.DataAccessLayer.DAOInterfaces.csproj", "{3446AD15-8E1C-4540-915C-5AE5BFD3A27E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{67DCFAA1-D1E9-4813-A9C9-E275C95122AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67DCFAA1-D1E9-4813-A9C9-E275C95122AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67DCFAA1-D1E9-4813-A9C9-E275C95122AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3446AD15-8E1C-4540-915C-5AE5BFD3A27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3446AD15-8E1C-4540-915C-5AE5BFD3A27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3446AD15-8E1C-4540-915C-5AE5BFD3A27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3446AD15-8E1C-4540-915C-5AE5BFD3A27E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,6 +111,7 @@ Global
 		{496798BE-5B10-4F81-8524-EBB2EFD71E99} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
 		{703DC3A6-D253-48C4-B283-F16756228E7E} = {034A5D2D-F875-47E7-A44F-92042F064DBB}
 		{67DCFAA1-D1E9-4813-A9C9-E275C95122AA} = {38AD3839-105D-4D58-94B9-8650D09CE0E3}
+		{3446AD15-8E1C-4540-915C-5AE5BFD3A27E} = {2C1A2607-EA51-4E5D-A8FC-37F05864E971}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E266973C-F163-45C1-A4F8-162771E80C13}
