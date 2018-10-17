@@ -47,9 +47,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.BusinessLogicL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.BusinessLogicLayer.Domain", "source\2-BusinessLogicLayer\Concrete\MRTFramework.BusinessLogicLayer.Domain\MRTFramework.BusinessLogicLayer.Domain.csproj", "{67DCFAA1-D1E9-4813-A9C9-E275C95122AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.DataAccessLayer.DAOInterfaces", "source\3-DataAccessLayer\Abstract\MRTFramework.DataAccessLayer.DAOInterfaces\MRTFramework.DataAccessLayer.DAOInterfaces.csproj", "{3446AD15-8E1C-4540-915C-5AE5BFD3A27E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.DataAccessLayer.DAOInterfaces", "source\3-DataAccessLayer\Abstract\MRTFramework.DataAccessLayer.DAOInterfaces\MRTFramework.DataAccessLayer.DAOInterfaces.csproj", "{3446AD15-8E1C-4540-915C-5AE5BFD3A27E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.DataAccessLayer.EntityFrameworkCore", "source\3-DataAccessLayer\Concrete\MRTFramework.DataAccessLayer.EntityFrameworkCore\MRTFramework.DataAccessLayer.EntityFrameworkCore.csproj", "{CFFEAEDF-E124-4702-98EF-D29470875B09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.DataAccessLayer.EntityFrameworkCore", "source\3-DataAccessLayer\Concrete\MRTFramework.DataAccessLayer.EntityFrameworkCore\MRTFramework.DataAccessLayer.EntityFrameworkCore.csproj", "{CFFEAEDF-E124-4702-98EF-D29470875B09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.CrossCuttingConcern.AspectOrientedProgramming", "source\5-CrossCuttingConcerns\MRTFramework.CrossCuttingConcern.AspectOrientedProgramming\MRTFramework.CrossCuttingConcern.AspectOrientedProgramming.csproj", "{16C351FB-5168-4837-9742-5D432705C510}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,10 @@ Global
 		{CFFEAEDF-E124-4702-98EF-D29470875B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFFEAEDF-E124-4702-98EF-D29470875B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFFEAEDF-E124-4702-98EF-D29470875B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C351FB-5168-4837-9742-5D432705C510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C351FB-5168-4837-9742-5D432705C510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C351FB-5168-4837-9742-5D432705C510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C351FB-5168-4837-9742-5D432705C510}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +125,7 @@ Global
 		{67DCFAA1-D1E9-4813-A9C9-E275C95122AA} = {38AD3839-105D-4D58-94B9-8650D09CE0E3}
 		{3446AD15-8E1C-4540-915C-5AE5BFD3A27E} = {2C1A2607-EA51-4E5D-A8FC-37F05864E971}
 		{CFFEAEDF-E124-4702-98EF-D29470875B09} = {59586B2B-DA17-45E2-8A23-ADAAA38BB6D9}
+		{16C351FB-5168-4837-9742-5D432705C510} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E266973C-F163-45C1-A4F8-162771E80C13}
