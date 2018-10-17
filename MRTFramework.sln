@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.Validati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.InApps", "source\4-Model\MRTFramework.Model.InApps\MRTFramework.Model.InApps.csproj", "{496798BE-5B10-4F81-8524-EBB2EFD71E99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.BusinessLogicLayer.ServiceInterfaces", "source\2-BusinessLogicLayer\Abstract\MRTFramework.BusinessLogicLayer.ServiceInterfaces\MRTFramework.BusinessLogicLayer.ServiceInterfaces.csproj", "{703DC3A6-D253-48C4-B283-F16756228E7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{496798BE-5B10-4F81-8524-EBB2EFD71E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{496798BE-5B10-4F81-8524-EBB2EFD71E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{496798BE-5B10-4F81-8524-EBB2EFD71E99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{703DC3A6-D253-48C4-B283-F16756228E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703DC3A6-D253-48C4-B283-F16756228E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703DC3A6-D253-48C4-B283-F16756228E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703DC3A6-D253-48C4-B283-F16756228E7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +97,7 @@ Global
 		{D491F29C-A916-4E04-A407-A22C0F6B6674} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
 		{7EBCD4C1-0D52-4014-81C2-753B9F8CB6B1} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
 		{496798BE-5B10-4F81-8524-EBB2EFD71E99} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
+		{703DC3A6-D253-48C4-B283-F16756228E7E} = {034A5D2D-F875-47E7-A44F-92042F064DBB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E266973C-F163-45C1-A4F8-162771E80C13}
