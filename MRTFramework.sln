@@ -31,7 +31,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstract", "Abstract", "{2C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concrete", "Concrete", "{59586B2B-DA17-45E2-8A23-ADAAA38BB6D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.Bases", "source\4-Model\MRTFramework.Model.Bases\MRTFramework.Model.Bases.csproj", "{B2CF80BD-C677-4154-AC44-91A91C288C74}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2CF80BD-C677-4154-AC44-91A91C288C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2CF80BD-C677-4154-AC44-91A91C288C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2CF80BD-C677-4154-AC44-91A91C288C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2CF80BD-C677-4154-AC44-91A91C288C74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -43,6 +55,7 @@ Global
 		{38AD3839-105D-4D58-94B9-8650D09CE0E3} = {5A257F7C-44F0-40F7-95BE-676F7AAF35D5}
 		{2C1A2607-EA51-4E5D-A8FC-37F05864E971} = {8169A026-A435-4091-BD7D-0E19A32733D3}
 		{59586B2B-DA17-45E2-8A23-ADAAA38BB6D9} = {8169A026-A435-4091-BD7D-0E19A32733D3}
+		{B2CF80BD-C677-4154-AC44-91A91C288C74} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E266973C-F163-45C1-A4F8-162771E80C13}
