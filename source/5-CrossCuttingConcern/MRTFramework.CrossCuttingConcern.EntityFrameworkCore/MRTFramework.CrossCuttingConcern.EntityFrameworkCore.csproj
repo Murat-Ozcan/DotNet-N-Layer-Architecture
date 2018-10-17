@@ -4,4 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0-preview2-35157" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MRTFramework.CrossCuttingConcern.Utils\MRTFramework.CrossCuttingConcern.Utils.csproj" />
+  </ItemGroup>
+
 </Project>
