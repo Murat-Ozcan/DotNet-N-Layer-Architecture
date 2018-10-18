@@ -5,9 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.0.100" />
+    <PackageReference Include="PostSharp" Version="6.1.6-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\3-DataAccessLayer\Abstract\MRTFramework.DataAccessLayer.DAOInterfaces\MRTFramework.DataAccessLayer.DAOInterfaces.csproj" />
     <ProjectReference Include="..\..\..\4-Model\MRTFramework.Model.Requests\MRTFramework.Model.Requests.csproj" />
     <ProjectReference Include="..\..\..\4-Model\MRTFramework.Model.Responses\MRTFramework.Model.Responses.csproj" />
+    <ProjectReference Include="..\..\..\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.AspectOrientedProgramming\MRTFramework.CrossCuttingConcern.AspectOrientedProgramming.csproj" />
     <ProjectReference Include="..\..\..\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Security\MRTFramework.CrossCuttingConcern.Security.csproj" />
     <ProjectReference Include="..\..\Abstract\MRTFramework.BusinessLogicLayer.ServiceInterfaces\MRTFramework.BusinessLogicLayer.ServiceInterfaces.csproj" />
   </ItemGroup>

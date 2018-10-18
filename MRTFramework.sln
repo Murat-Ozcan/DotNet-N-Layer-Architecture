@@ -69,7 +69,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.CrossCuttingCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.CrossCuttingConcern.Validation", "source\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Validation\MRTFramework.CrossCuttingConcern.Validation.csproj", "{BB13B7BB-F359-473B-9B3A-96909392015F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.Model.BaseModels", "source\4-Model\MRTFramework.Model.BaseModels\MRTFramework.Model.BaseModels.csproj", "{2E608669-821E-4CD5-8D1B-E70AD229AF61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MRTFramework.Model.BaseModels", "source\4-Model\MRTFramework.Model.BaseModels\MRTFramework.Model.BaseModels.csproj", "{2E608669-821E-4CD5-8D1B-E70AD229AF61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MRTFramework.SharedUI.Api", "source\1-Client\Shared-UI\MRTFramework.SharedUI.Api\MRTFramework.SharedUI.Api.csproj", "{934F5B36-07EE-428C-87FC-3EB4A4F7A1F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,6 +159,10 @@ Global
 		{2E608669-821E-4CD5-8D1B-E70AD229AF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E608669-821E-4CD5-8D1B-E70AD229AF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E608669-821E-4CD5-8D1B-E70AD229AF61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934F5B36-07EE-428C-87FC-3EB4A4F7A1F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934F5B36-07EE-428C-87FC-3EB4A4F7A1F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934F5B36-07EE-428C-87FC-3EB4A4F7A1F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934F5B36-07EE-428C-87FC-3EB4A4F7A1F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -189,6 +195,7 @@ Global
 		{22FC018B-6DAD-4076-A770-BE8FB2781A8B} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
 		{BB13B7BB-F359-473B-9B3A-96909392015F} = {2DC59CC4-03A1-4E9B-9BA6-1BD9A15C7A1A}
 		{2E608669-821E-4CD5-8D1B-E70AD229AF61} = {C2E96E48-18B4-431F-A2B9-F93DDB5A84E3}
+		{934F5B36-07EE-428C-87FC-3EB4A4F7A1F3} = {4CF82267-B743-4AF2-AC1A-0EC41F4C943A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E266973C-F163-45C1-A4F8-162771E80C13}

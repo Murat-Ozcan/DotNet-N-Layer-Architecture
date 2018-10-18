@@ -1,6 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using MRTFramework.BusinessLogicLayer.ServiceInterfaces;
+using MRTFramework.CrossCuttingConcern.AspectOrientedProgramming.PostSharp.CacheAspect;
+using MRTFramework.CrossCuttingConcern.AspectOrientedProgramming.PostSharp.PerformanceAspect;
+using MRTFramework.CrossCuttingConcern.Caching.Concrete.Microsoft;
+using MRTFramework.CrossCuttingConcern.Logging.Concrete.NLog;
 using MRTFramework.DataAccessLayer.DAOInterfaces.Repositories;
 using MRTFramework.Model.BaseModels.Concrete;
 
