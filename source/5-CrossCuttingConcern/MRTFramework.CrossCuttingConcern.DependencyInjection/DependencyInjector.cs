@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using MRTFramework.BusinessLogicLayer.Domain.Managers;
+using MRTFramework.BusinessLogicLayer.ServiceInterfaces;
 using MRTFramework.CrossCuttingConcern.Security;
 using MRTFramework.DataAccessLayer.DAOInterfaces.Repositories;
 using MRTFramework.DataAccessLayer.DAOInterfaces.UnitOfWork;
@@ -50,8 +52,8 @@ namespace MRTFramework.CrossCuttingConcern.DependencyInjection
 
             // Solution - Business - Concrete / MRTFramework.Business.Domain
 
-            //Services.AddScoped<IUserService, UserManager>();
-            //Services.AddScoped<IAuthentication, AuthenticationManager>();
+            Services.AddScoped<IUserService, UserManager>();
+            Services.AddScoped<IAuthentication, AuthenticationManager>();
 
             // Solution.CrossCutting
             Services.AddScoped<IJsonWebToken, JsonWebToken>();

@@ -9,6 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\2-BusinessLogicLayer\Abstract\MRTFramework.BusinessLogicLayer.ServiceInterfaces\MRTFramework.BusinessLogicLayer.ServiceInterfaces.csproj" />
+    <ProjectReference Include="..\..\2-BusinessLogicLayer\Concrete\MRTFramework.BusinessLogicLayer.Domain\MRTFramework.BusinessLogicLayer.Domain.csproj" />
     <ProjectReference Include="..\..\3-DataAccessLayer\Abstract\MRTFramework.DataAccessLayer.DAOInterfaces\MRTFramework.DataAccessLayer.DAOInterfaces.csproj" />
     <ProjectReference Include="..\..\3-DataAccessLayer\Concrete\MRTFramework.DataAccessLayer.EntityFrameworkCore\MRTFramework.DataAccessLayer.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\MRTFramework.CrossCuttingConcern.Security\MRTFramework.CrossCuttingConcern.Security.csproj" />

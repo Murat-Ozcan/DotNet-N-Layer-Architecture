@@ -4,4 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\3-DataAccessLayer\Abstract\MRTFramework.DataAccessLayer.DAOInterfaces\MRTFramework.DataAccessLayer.DAOInterfaces.csproj" />
+    <ProjectReference Include="..\..\..\4-Model\MRTFramework.Model.Requests\MRTFramework.Model.Requests.csproj" />
+    <ProjectReference Include="..\..\..\4-Model\MRTFramework.Model.Responses\MRTFramework.Model.Responses.csproj" />
+    <ProjectReference Include="..\..\..\5-CrossCuttingConcern\MRTFramework.CrossCuttingConcern.Security\MRTFramework.CrossCuttingConcern.Security.csproj" />
+    <ProjectReference Include="..\..\Abstract\MRTFramework.BusinessLogicLayer.ServiceInterfaces\MRTFramework.BusinessLogicLayer.ServiceInterfaces.csproj" />
+  </ItemGroup>
+
 </Project>
