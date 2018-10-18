@@ -4,4 +4,24 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.0.100" />
+    <PackageReference Include="PostSharp" Version="6.1.6-preview" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\4-Model\MRTFramework.Model.Enums\MRTFramework.Model.Enums.csproj" />
+    <ProjectReference Include="..\MRTFramework.CrossCuttingConcern.Caching\MRTFramework.CrossCuttingConcern.Caching.csproj" />
+    <ProjectReference Include="..\MRTFramework.CrossCuttingConcern.Logging\MRTFramework.CrossCuttingConcern.Logging.csproj" />
+    <ProjectReference Include="..\MRTFramework.CrossCuttingConcern.Performance\MRTFramework.CrossCuttingConcern.Performance.csproj" />
+    <ProjectReference Include="..\MRTFramework.CrossCuttingConcern.Utils\MRTFramework.CrossCuttingConcern.Utils.csproj" />
+    <ProjectReference Include="..\MRTFramework.CrossCuttingConcern.Validation\MRTFramework.CrossCuttingConcern.Validation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
