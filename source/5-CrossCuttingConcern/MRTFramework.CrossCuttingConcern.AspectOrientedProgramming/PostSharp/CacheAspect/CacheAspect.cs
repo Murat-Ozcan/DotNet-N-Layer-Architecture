@@ -14,8 +14,8 @@ namespace MRTFramework.CrossCuttingConcern.AspectOrientedProgramming.PostSharp.C
     public class CacheAspect : MethodInterceptionAspect
     {
         private readonly int _cacheByMinute;
-        private readonly string _customKey;
         private readonly Type _cacheType;
+        private readonly string _customKey;
         private ICacheManager _cacheManager;
 
         public CacheAspect(Type cacheType, int cacheByMinute, string customKey = null)
@@ -27,12 +27,9 @@ namespace MRTFramework.CrossCuttingConcern.AspectOrientedProgramming.PostSharp.C
 
         public override void RuntimeInitialize(MethodBase method)
         {
-            if (typeof(ICacheManager).IsAssignableFrom(_cacheType) == false)
-            {
-                throw new Exception("Wrong Cache Manager");
-            }
+            if (typeof(ICacheManager).IsAssignableFrom(_cacheType) == false) throw new Exception("Wrong Cache Manager");
 
-            _cacheManager = (ICacheManager)Activator.CreateInstance(_cacheType);
+            _cacheManager = (ICacheManager) Activator.CreateInstance(_cacheType);
 
             base.RuntimeInitialize(method);
         }
@@ -43,14 +40,15 @@ namespace MRTFramework.CrossCuttingConcern.AspectOrientedProgramming.PostSharp.C
             var referenceTypeKey = new StringBuilder();
             var valueTypeKey = new StringBuilder();
 
-            var methodName = CacheExtensions.IsCustomKey(_customKey) ? args.MethodNameWithClassName() : _customKey.WhiteSpaceRemove();
+            var methodName = CacheExtensions.IsCustomKey(_customKey)
+                ? args.MethodNameWithClassName()
+                : _customKey.WhiteSpaceRemove();
 
             keyGenerator.Append(methodName);
 
             var arguments = args.Arguments.ToList();
 
             foreach (var dataArgument in arguments)
-            {
                 if (dataArgument != null)
                 {
                     var getTypeInfo = dataArgument.GetType().GetTypeInfo().ToString();
@@ -62,27 +60,21 @@ namespace MRTFramework.CrossCuttingConcern.AspectOrientedProgramming.PostSharp.C
 
                         referenceTypeKey.AppendFormat($"{getObjectName}RT/");
 
-                        var getPropertiesValue = dataArgument.GetType().GetProperties().Select(x => x.GetValue(dataArgument));
+                        var getPropertiesValue =
+                            dataArgument.GetType().GetProperties().Select(x => x.GetValue(dataArgument));
 
                         foreach (var value in getPropertiesValue)
-                        {
-                            referenceTypeKey.AppendFormat(value == null ? $"<Null>/" : $"{value}/");
-                        }
-
+                            referenceTypeKey.AppendFormat(value == null ? "<Null>/" : $"{value}/");
                     }
 
                     if (getTypeInfo == "System.String" || getBaseType == "System.ValueType")
-                    {
                         valueTypeKey.AppendFormat($"{dataArgument}-");
-                    }
                 }
 
                 else
                 {
-                    valueTypeKey.AppendFormat($"<Null>-");
+                    valueTypeKey.AppendFormat("<Null>-");
                 }
-
-            }
 
             if (!IsNullOrEmpty(referenceTypeKey.ToString()))
             {
@@ -126,7 +118,6 @@ namespace MRTFramework.CrossCuttingConcern.AspectOrientedProgramming.PostSharp.C
             base.OnInvoke(args);
 
             _cacheManager.Add(clearKeyData, args.ReturnValue, _cacheByMinute);
-
         }
     }
 }
